@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D8E3C11EC06B3C000A1F53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3C01EC06B3C000A1F53 /* AppDelegate.swift */; };
+		01D8E3C31EC06B3C000A1F53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3C21EC06B3C000A1F53 /* ViewController.swift */; };
+		01D8E3C61EC06B3C000A1F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E3C41EC06B3C000A1F53 /* Main.storyboard */; };
+		01D8E3C81EC06B3C000A1F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E3C71EC06B3C000A1F53 /* Assets.xcassets */; };
+		01D8E3CB1EC06B3C000A1F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E3C91EC06B3C000A1F53 /* LaunchScreen.storyboard */; };
+		01D8E3D61EC06B3C000A1F53 /* GuessIt_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3D51EC06B3C000A1F53 /* GuessIt_Tests.swift */; };
+		01D8E3E11EC06B3D000A1F53 /* GuessIt_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3E01EC06B3D000A1F53 /* GuessIt_UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D8E3D21EC06B3C000A1F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D8E3B51EC06B3C000A1F53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D8E3BC1EC06B3C000A1F53;
+			remoteInfo = "GuessIt!";
+		};
+		01D8E3DD1EC06B3D000A1F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D8E3B51EC06B3C000A1F53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D8E3BC1EC06B3C000A1F53;
+			remoteInfo = "GuessIt!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D8E3BD1EC06B3C000A1F53 /* GuessIt!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuessIt!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D8E3C01EC06B3C000A1F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D8E3C21EC06B3C000A1F53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01D8E3C51EC06B3C000A1F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D8E3C71EC06B3C000A1F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D8E3CA1EC06B3C000A1F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D8E3CC1EC06B3C000A1F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D8E3D11EC06B3C000A1F53 /* GuessIt!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuessIt!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D8E3D51EC06B3C000A1F53 /* GuessIt_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessIt_Tests.swift; sourceTree = "<group>"; };
+		01D8E3D71EC06B3C000A1F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D8E3DC1EC06B3D000A1F53 /* GuessIt!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuessIt!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D8E3E01EC06B3D000A1F53 /* GuessIt_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessIt_UITests.swift; sourceTree = "<group>"; };
+		01D8E3E21EC06B3D000A1F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D8E3BA1EC06B3C000A1F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3CE1EC06B3C000A1F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3D91EC06B3D000A1F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D8E3B41EC06B3C000A1F53 = {
+			isa = PBXGroup;
+			children = (
+				01D8E3BF1EC06B3C000A1F53 /* GuessIt! */,
+				01D8E3D41EC06B3C000A1F53 /* GuessIt!Tests */,
+				01D8E3DF1EC06B3D000A1F53 /* GuessIt!UITests */,
+				01D8E3BE1EC06B3C000A1F53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01D8E3BE1EC06B3C000A1F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D8E3BD1EC06B3C000A1F53 /* GuessIt!.app */,
+				01D8E3D11EC06B3C000A1F53 /* GuessIt!Tests.xctest */,
+				01D8E3DC1EC06B3D000A1F53 /* GuessIt!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D8E3BF1EC06B3C000A1F53 /* GuessIt! */ = {
+			isa = PBXGroup;
+			children = (
+				01D8E3C01EC06B3C000A1F53 /* AppDelegate.swift */,
+				01D8E3C21EC06B3C000A1F53 /* ViewController.swift */,
+				01D8E3C41EC06B3C000A1F53 /* Main.storyboard */,
+				01D8E3C71EC06B3C000A1F53 /* Assets.xcassets */,
+				01D8E3C91EC06B3C000A1F53 /* LaunchScreen.storyboard */,
+				01D8E3CC1EC06B3C000A1F53 /* Info.plist */,
+			);
+			path = "GuessIt!";
+			sourceTree = "<group>";
+		};
+		01D8E3D41EC06B3C000A1F53 /* GuessIt!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				01D8E3D51EC06B3C000A1F53 /* GuessIt_Tests.swift */,
+				01D8E3D71EC06B3C000A1F53 /* Info.plist */,
+			);
+			path = "GuessIt!Tests";
+			sourceTree = "<group>";
+		};
+		01D8E3DF1EC06B3D000A1F53 /* GuessIt!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				01D8E3E01EC06B3D000A1F53 /* GuessIt_UITests.swift */,
+				01D8E3E21EC06B3D000A1F53 /* Info.plist */,
+			);
+			path = "GuessIt!UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D8E3BC1EC06B3C000A1F53 /* GuessIt! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D8E3E51EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!" */;
+			buildPhases = (
+				01D8E3B91EC06B3C000A1F53 /* Sources */,
+				01D8E3BA1EC06B3C000A1F53 /* Frameworks */,
+				01D8E3BB1EC06B3C000A1F53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GuessIt!";
+			productName = "GuessIt!";
+			productReference = 01D8E3BD1EC06B3C000A1F53 /* GuessIt!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01D8E3D01EC06B3C000A1F53 /* GuessIt!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D8E3E81EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!Tests" */;
+			buildPhases = (
+				01D8E3CD1EC06B3C000A1F53 /* Sources */,
+				01D8E3CE1EC06B3C000A1F53 /* Frameworks */,
+				01D8E3CF1EC06B3C000A1F53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D8E3D31EC06B3C000A1F53 /* PBXTargetDependency */,
+			);
+			name = "GuessIt!Tests";
+			productName = "GuessIt!Tests";
+			productReference = 01D8E3D11EC06B3C000A1F53 /* GuessIt!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01D8E3DB1EC06B3D000A1F53 /* GuessIt!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D8E3EB1EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!UITests" */;
+			buildPhases = (
+				01D8E3D81EC06B3D000A1F53 /* Sources */,
+				01D8E3D91EC06B3D000A1F53 /* Frameworks */,
+				01D8E3DA1EC06B3D000A1F53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D8E3DE1EC06B3D000A1F53 /* PBXTargetDependency */,
+			);
+			name = "GuessIt!UITests";
+			productName = "GuessIt!UITests";
+			productReference = 01D8E3DC1EC06B3D000A1F53 /* GuessIt!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D8E3B51EC06B3C000A1F53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = DanielaLetunica;
+				TargetAttributes = {
+					01D8E3BC1EC06B3C000A1F53 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					01D8E3D01EC06B3C000A1F53 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 01D8E3BC1EC06B3C000A1F53;
+					};
+					01D8E3DB1EC06B3D000A1F53 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 01D8E3BC1EC06B3C000A1F53;
+					};
+				};
+			};
+			buildConfigurationList = 01D8E3B81EC06B3C000A1F53 /* Build configuration list for PBXProject "GuessIt!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D8E3B41EC06B3C000A1F53;
+			productRefGroup = 01D8E3BE1EC06B3C000A1F53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D8E3BC1EC06B3C000A1F53 /* GuessIt! */,
+				01D8E3D01EC06B3C000A1F53 /* GuessIt!Tests */,
+				01D8E3DB1EC06B3D000A1F53 /* GuessIt!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D8E3BB1EC06B3C000A1F53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D8E3CB1EC06B3C000A1F53 /* LaunchScreen.storyboard in Resources */,
+				01D8E3C81EC06B3C000A1F53 /* Assets.xcassets in Resources */,
+				01D8E3C61EC06B3C000A1F53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3CF1EC06B3C000A1F53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3DA1EC06B3D000A1F53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D8E3B91EC06B3C000A1F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D8E3C31EC06B3C000A1F53 /* ViewController.swift in Sources */,
+				01D8E3C11EC06B3C000A1F53 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3CD1EC06B3C000A1F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D8E3D61EC06B3C000A1F53 /* GuessIt_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D8E3D81EC06B3D000A1F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D8E3E11EC06B3D000A1F53 /* GuessIt_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D8E3D31EC06B3C000A1F53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D8E3BC1EC06B3C000A1F53 /* GuessIt! */;
+			targetProxy = 01D8E3D21EC06B3C000A1F53 /* PBXContainerItemProxy */;
+		};
+		01D8E3DE1EC06B3D000A1F53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D8E3BC1EC06B3C000A1F53 /* GuessIt! */;
+			targetProxy = 01D8E3DD1EC06B3D000A1F53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01D8E3C41EC06B3C000A1F53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D8E3C51EC06B3C000A1F53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01D8E3C91EC06B3C000A1F53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D8E3CA1EC06B3C000A1F53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D8E3E31EC06B3D000A1F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01D8E3E41EC06B3D000A1F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D8E3E61EC06B3D000A1F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GuessIt!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		01D8E3E71EC06B3D000A1F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GuessIt!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		01D8E3E91EC06B3D000A1F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "GuessIt!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessIt!.app/GuessIt!";
+			};
+			name = Debug;
+		};
+		01D8E3EA1EC06B3D000A1F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "GuessIt!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessIt!.app/GuessIt!";
+			};
+			name = Release;
+		};
+		01D8E3EC1EC06B3D000A1F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "GuessIt!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "GuessIt!";
+			};
+			name = Debug;
+		};
+		01D8E3ED1EC06B3D000A1F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "GuessIt!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Deakin.GuessIt-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "GuessIt!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D8E3B81EC06B3C000A1F53 /* Build configuration list for PBXProject "GuessIt!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D8E3E31EC06B3D000A1F53 /* Debug */,
+				01D8E3E41EC06B3D000A1F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D8E3E51EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D8E3E61EC06B3D000A1F53 /* Debug */,
+				01D8E3E71EC06B3D000A1F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01D8E3E81EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D8E3E91EC06B3D000A1F53 /* Debug */,
+				01D8E3EA1EC06B3D000A1F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01D8E3EB1EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D8E3EC1EC06B3D000A1F53 /* Debug */,
+				01D8E3ED1EC06B3D000A1F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D8E3B51EC06B3C000A1F53 /* Project object */;
+}

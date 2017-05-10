@@ -14,6 +14,10 @@
 		01D8E3CB1EC06B3C000A1F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E3C91EC06B3C000A1F53 /* LaunchScreen.storyboard */; };
 		01D8E3D61EC06B3C000A1F53 /* GuessIt_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3D51EC06B3C000A1F53 /* GuessIt_Tests.swift */; };
 		01D8E3E11EC06B3D000A1F53 /* GuessIt_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3E01EC06B3D000A1F53 /* GuessIt_UITests.swift */; };
+		01D8E3F71EC31503000A1F53 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3F61EC31503000A1F53 /* SecondViewController.swift */; };
+		01D8E3FB1EC3155E000A1F53 /* CSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3FA1EC3155E000A1F53 /* CSViewController.swift */; };
+		01D8E3FD1EC3157F000A1F53 /* TCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3FC1EC3157F000A1F53 /* TCViewController.swift */; };
+		01D8E3FF1EC315A6000A1F53 /* BLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3FE1EC315A6000A1F53 /* BLViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		01D8E3DC1EC06B3D000A1F53 /* GuessIt!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuessIt!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D8E3E01EC06B3D000A1F53 /* GuessIt_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessIt_UITests.swift; sourceTree = "<group>"; };
 		01D8E3E21EC06B3D000A1F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D8E3F61EC31503000A1F53 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		01D8E3FA1EC3155E000A1F53 /* CSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSViewController.swift; path = ../CSViewController.swift; sourceTree = "<group>"; };
+		01D8E3FC1EC3157F000A1F53 /* TCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCViewController.swift; path = ../TCViewController.swift; sourceTree = "<group>"; };
+		01D8E3FE1EC315A6000A1F53 /* BLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLViewController.swift; path = ../BLViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				01D8E3C01EC06B3C000A1F53 /* AppDelegate.swift */,
-				01D8E3C21EC06B3C000A1F53 /* ViewController.swift */,
 				01D8E3C41EC06B3C000A1F53 /* Main.storyboard */,
+				01D8E3C21EC06B3C000A1F53 /* ViewController.swift */,
+				01D8E3F61EC31503000A1F53 /* SecondViewController.swift */,
+				01D8E3FA1EC3155E000A1F53 /* CSViewController.swift */,
+				01D8E3FC1EC3157F000A1F53 /* TCViewController.swift */,
+				01D8E3FE1EC315A6000A1F53 /* BLViewController.swift */,
 				01D8E3C71EC06B3C000A1F53 /* Assets.xcassets */,
 				01D8E3C91EC06B3C000A1F53 /* LaunchScreen.storyboard */,
 				01D8E3CC1EC06B3C000A1F53 /* Info.plist */,
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D8E3FF1EC315A6000A1F53 /* BLViewController.swift in Sources */,
+				01D8E3FD1EC3157F000A1F53 /* TCViewController.swift in Sources */,
+				01D8E3F71EC31503000A1F53 /* SecondViewController.swift in Sources */,
 				01D8E3C31EC06B3C000A1F53 /* ViewController.swift in Sources */,
+				01D8E3FB1EC3155E000A1F53 /* CSViewController.swift in Sources */,
 				01D8E3C11EC06B3C000A1F53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +523,7 @@
 				01D8E3E71EC06B3D000A1F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D8E3E81EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				01D8E3EA1EC06B3D000A1F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D8E3EB1EC06B3D000A1F53 /* Build configuration list for PBXNativeTarget "GuessIt!UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				01D8E3ED1EC06B3D000A1F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

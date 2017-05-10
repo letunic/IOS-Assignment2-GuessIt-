@@ -8,7 +8,50 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    //User Image
+    @IBOutlet weak var Insert: UIImageView!
+    
+    
+    //Insert User image
+    @IBAction func InsertImageButton(_ sender: AnyObject) {
+        
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        image.allowsEditing = true
+        self.present(image, animated: true)
+
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        
+        if let image =  info[UIImagePickerControllerOriginalImage] as? UIImage
+        {
+            Insert.image = image
+            
+        }
+        else
+        {
+            Insert.image = nil
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    //Start Button
+    
+    @IBAction func StartButton(_ sender: AnyObject) {
+        
+        SecondViewController()
+    }
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

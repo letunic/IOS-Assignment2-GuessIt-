@@ -14,13 +14,14 @@ class CSViewController: UIViewController {
     
     var CorrectAnswer = String()
     var score : Int = 0
+    var GamePlay = true
     
-    let questions = ["What shape is coloured in purple?", "Which shape is coloured in red?", "how many colours are there?"]
+    let questions = ["What shape is coloured in purple?", "Which one is red?", "how many colours are there?","Please click back and choose your next level"]
     
-    let images = [#imageLiteral(resourceName: "shapes1"), #imageLiteral(resourceName: "shapes2"), #imageLiteral(resourceName: "shapes3 copy")]
+    let images = [#imageLiteral(resourceName: "shapes1"), #imageLiteral(resourceName: "shapes2"), #imageLiteral(resourceName: "shapes3 copy"), #imageLiteral(resourceName: "Logo")]
     
     // first must be right answer
-    let answers = [["Square", "Triangle", "Heart", "Circle"], ["Heart", "Triangle", "Arrrow", "Circle"], ["3", "5", "2", "1"]]
+    let answers = [["Square", "Triangle", "Heart", "Circle"], ["Heart", "Triangle", "Arrrow", "Circle"], ["3", "5", "2", "1"],[" ", " ", " ", " "]]
     
     let hints = ["Q1hint", "Q2hint", "Q3hint"]
     
@@ -71,18 +72,19 @@ class CSViewController: UIViewController {
             NewQuestion()
             
         }
-        
-        if (CurrentQuestion == 3)
+        else
         {
-            SecondViewController()
+            print("done")
+    
         }
-
+   
     }
     
     
     
     func NewQuestion()
     {
+        GamePlay = true
         Question.text = questions[CurrentQuestion]
         
         QImage.image = images[currentImage]
@@ -112,6 +114,8 @@ class CSViewController: UIViewController {
         
         CurrentQuestion += 1
         currentImage += 1
+        
+ 
         
     }
     

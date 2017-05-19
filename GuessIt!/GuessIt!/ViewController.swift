@@ -40,6 +40,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.dismiss(animated: true, completion: nil)
     }
 
+    
+    @IBOutlet weak var scoreLable: UILabel!
+    
+    if score
     //Start Button
     
     @IBAction func StartButton(_ sender: AnyObject) {

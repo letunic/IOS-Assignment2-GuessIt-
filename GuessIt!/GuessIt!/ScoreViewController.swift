@@ -33,6 +33,14 @@ class ScoreViewController: UIViewController {
             sender.setImage(UIImage(named : "298925"), for: .normal)
             UIView.animate(withDuration: 0.4, animations: {sender.alpha = 0}, completion: { (true) in sender.removeFromSuperview()})
         }
+    
+    
+    
+    @IBAction func back(_ sender: Any) {
+        
+        SecondViewController()
+    }
+    
         
         override func viewDidLoad() {
             super.viewDidLoad()

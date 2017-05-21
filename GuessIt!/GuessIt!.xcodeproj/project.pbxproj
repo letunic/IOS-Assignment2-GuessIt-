@@ -19,6 +19,7 @@
 		01D8E3FF1EC315A6000A1F53 /* BLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E3FE1EC315A6000A1F53 /* BLViewController.swift */; };
 		01D8E4011ECF251A000A1F53 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8E4001ECF251A000A1F53 /* ScoreViewController.swift */; };
 		01D8E4031ED05B33000A1F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E4021ED05B33000A1F53 /* Assets.xcassets */; };
+		01D8E4051ED1BF3C000A1F53 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 01D8E4041ED1BF3C000A1F53 /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		01D8E3FE1EC315A6000A1F53 /* BLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLViewController.swift; path = ../BLViewController.swift; sourceTree = "<group>"; };
 		01D8E4001ECF251A000A1F53 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		01D8E4021ED05B33000A1F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D8E4041ED1BF3C000A1F53 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				01D8E3C01EC06B3C000A1F53 /* AppDelegate.swift */,
 				01D8E3C41EC06B3C000A1F53 /* Main.storyboard */,
+				01D8E4041ED1BF3C000A1F53 /* song.mp3 */,
 				01D8E3C21EC06B3C000A1F53 /* ViewController.swift */,
 				01D8E3F61EC31503000A1F53 /* SecondViewController.swift */,
 				01D8E3FA1EC3155E000A1F53 /* CSViewController.swift */,
@@ -249,6 +252,7 @@
 			files = (
 				01D8E3CB1EC06B3C000A1F53 /* LaunchScreen.storyboard in Resources */,
 				01D8E4031ED05B33000A1F53 /* Assets.xcassets in Resources */,
+				01D8E4051ED1BF3C000A1F53 /* song.mp3 in Resources */,
 				01D8E3C61EC06B3C000A1F53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

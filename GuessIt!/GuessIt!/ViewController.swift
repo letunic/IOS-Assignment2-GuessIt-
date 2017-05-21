@@ -11,12 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    /////////////////////////////////
-    
-    
-    ///////////////////////////////
-    
-    
+  
     
     
     
@@ -66,14 +61,75 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     
     
+    //Music
     
     
+    @IBOutlet weak var MusicPlayer: UIButton!
+    @IBAction func Musicplayer(_ sender: Any) {
+        
+        Play.isHidden = false
+        Pause.isHidden = false
+        Stop.isHidden = false
+    }
+    
+   
+    
+    var soundplayer: AVAudioPlayer?
+    var elapsedtime: TimeInterval = 0
+    
+    
+    @IBAction func Play(_ sender: Any) {
+        
+        if soundplayer != nil {
+            soundplayer!.currentTime = elapsedtime
+            soundplayer!.play()
+            
+        }
+    }
+    
+    
+    
+    @IBAction func Pause(_ sender: Any) {
+        
+        if soundplayer != nil {
+            elapsedtime = soundplayer!.currentTime
+            soundplayer!.pause()
+        }
+        
+    }
+    
+    @IBAction func Stop(_ sender: Any) {
+        
+        if soundplayer != nil {
+            soundplayer!.stop()
+            elapsedtime = 0
+        }
+    }
+    
+    @IBOutlet weak var Play: UIButton!
+    @IBOutlet weak var Pause: UIButton!
+    @IBOutlet weak var Stop: UIButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-               
+        Play.isHidden = true
+        Pause.isHidden = true
+        Stop.isHidden = true
+        
+        let path =
+            Bundle.main.path(forResource: "song", ofType: "mp3")// song sourced royalty free @ http://www.bensound.com/royalty-free-music/2
+        let url = URL(fileURLWithPath: path!)
+        
+        do{
+            try soundplayer = AVAudioPlayer(contentsOf: url)
+        }
+        catch
+        {
+            print("file not available")
+        }
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

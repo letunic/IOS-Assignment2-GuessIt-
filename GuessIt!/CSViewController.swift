@@ -23,7 +23,7 @@ class CSViewController: UIViewController {
     // first must be right answer
     let answers = [["Square", "Triangle", "Heart", "Circle"], ["Heart", "Triangle", "Arrrow", "Circle"], ["3", "5", "2", "1"],[" ", " ", " ", " "]]
     
-    let hints = ["Q1hint", "Q2hint", "Q3hint"]
+    let hints = ["it has four sides", "its a sign of love", "thr"]
     
     var CurrentQuestion = 0
     var CurrentHint = 0

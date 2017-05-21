@@ -42,7 +42,7 @@ class BLViewController: UIViewController {
         {
             do{
                 score += 1
-                ScoreLabel.text = "Score = \(score)"
+                ScoreLabel.text = "Score:    \(score)"
             }
             
             do{
@@ -120,6 +120,7 @@ class BLViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         NewQuestion()
         
     }

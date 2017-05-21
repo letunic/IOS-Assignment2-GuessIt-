@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    /////////////////////////////////
+    
+    
+    ///////////////////////////////
+    
+    
+    
+    
     
     //User Image
     @IBOutlet weak var Insert: UIImageView!
@@ -41,9 +51,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
 
     
-    @IBOutlet weak var scoreLable: UILabel!
+    @IBOutlet var Nameinput: UITextField!
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
-    if score
     //Start Button
     
     @IBAction func StartButton(_ sender: AnyObject) {
@@ -59,6 +72,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+               
         // Do any additional setup after loading the view, typically from a nib.
     }
 

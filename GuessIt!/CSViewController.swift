@@ -14,11 +14,11 @@ class CSViewController: UIViewController {
     
     var CorrectAnswer = String()
     var score : Int = 0
-    var GamePlay = true
     
-    let questions = ["What shape is coloured in purple?", "Which one is red?", "how many colours are there?","Please click back and choose your next level"]
     
-    let images = [#imageLiteral(resourceName: "shapes1"), #imageLiteral(resourceName: "shapes2"), #imageLiteral(resourceName: "shapes3 copy"), #imageLiteral(resourceName: "Logo")]
+    let questions = ["What shape is coloured in purple?", "Which shape is red?", "how many colours are there?",""]
+    
+    let images = [#imageLiteral(resourceName: "shapes1-1"),#imageLiteral(resourceName: "shapes2-1"), #imageLiteral(resourceName: "shapes3 copy-1"), #imageLiteral(resourceName: "Background")]
     
     // first must be right answer
     let answers = [["Square", "Triangle", "Heart", "Circle"], ["Heart", "Triangle", "Arrrow", "Circle"], ["3", "5", "2", "1"],[" ", " ", " ", " "]]
@@ -30,8 +30,12 @@ class CSViewController: UIViewController {
     var currentImage = 0
     var RightAnswerPlace:UInt32 = 0
 
+   
     
-    
+    @IBOutlet weak var answerbutton4: UIButton!
+    @IBOutlet weak var answerbuttons3: UIButton!
+    @IBOutlet weak var answerbuttons2: UIButton!
+    @IBOutlet weak var answerbuttons: UIButton!
     
     @IBAction func MultipleButtons(_ sender: AnyObject) {
         
@@ -40,7 +44,7 @@ class CSViewController: UIViewController {
         {
             do{
                 score += 1
-                ScoreLabel.text = "Score = \(score)"
+                ScoreLabel.text = "Score:     \(score)"
             }
             
             do{
@@ -69,13 +73,20 @@ class CSViewController: UIViewController {
         
         if (CurrentQuestion != questions.count)
         {
-            NewQuestion()
+                NewQuestion()
             
         }
-        else
+       
+        if (CurrentQuestion == questions.count)
         {
+            answerbutton4.isHidden = true
+            answerbuttons3.isHidden = true
+            answerbuttons2.isHidden = true
+            answerbuttons.isHidden = true
+            NextLevel.isHidden = false
             print("done")
-    
+
+            
         }
    
     }
@@ -84,7 +95,9 @@ class CSViewController: UIViewController {
     
     func NewQuestion()
     {
-        GamePlay = true
+        
+        
+
         Question.text = questions[CurrentQuestion]
         
         QImage.image = images[currentImage]
@@ -170,6 +183,15 @@ class CSViewController: UIViewController {
         
     }
     
+    
+    @IBOutlet weak var NextLevel: UIButton!
+    
+    @IBAction func NextLbutton(_ sender: AnyObject) {
+
+            TCViewController()
+    
+    }
+    
 
     @IBAction func BAckbutton(_ sender: AnyObject) {
         
@@ -177,15 +199,22 @@ class CSViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        NextLevel.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }

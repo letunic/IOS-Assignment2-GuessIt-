@@ -8,12 +8,12 @@ class BLViewController: UIViewController {
     var CorrectAnswer = String()
     var score : Int = 0
     
-    let questions = ["What brands logo is this?", "Whats the name of this brand?", "What brands logo is this?"]
+    let questions = ["What brands logo is this?", "Whats the name of this brand?", "What brands logo is this?", " "]
     
-    let images = [#imageLiteral(resourceName: "LouisVuitton copy"), #imageLiteral(resourceName: "Chanel"), #imageLiteral(resourceName: "Tommyhilfigure")]
+    let images = [#imageLiteral(resourceName: "LouisVuitton copy-1"), #imageLiteral(resourceName: "Chanel"), #imageLiteral(resourceName: "Tommyhilfigure-2"), #imageLiteral(resourceName: "Background")]
     
     // first must be right answer
-    let answers = [["Louis Vuitton", "Tiffany & Co", "Prada", "Calvin Klein"], ["Chanel", "Converse", "Gucci", "Guess"], ["Tommy Hilfigure", "Supreme", "Diesel", "Ralph Lauren"]]
+    let answers = [["Louis Vuitton", "Tiffany & Co", "Prada", "Calvin Klein"], ["Chanel", "Converse", "Gucci", "Guess"], ["Tommy Hilfigure", "Supreme", "Diesel", "Ralph Lauren"], [" ", " ", " ", " "]]
     
     let hints = ["I sell bags with my logo all over them", "I sell perfume", "I sell mens and womens clothing"]
     
@@ -31,6 +31,10 @@ class BLViewController: UIViewController {
     
     
     
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button1: UIButton!
     @IBAction func MultipleButtons(_ sender: AnyObject) {
         
         
@@ -70,10 +74,13 @@ class BLViewController: UIViewController {
             NewQuestion()
             
         }
-        else
+        if (CurrentQuestion == questions.count)
         {
-            //secondviewcontrolcer
-            
+            button4.isHidden = true
+            button3.isHidden = true
+            button2.isHidden = true
+            button1.isHidden = true
+            nextgame.isHidden = false
         }
     }
     
@@ -160,12 +167,18 @@ class BLViewController: UIViewController {
         
     }
 
+    @IBOutlet weak var nextgame: UILabel!
+  
         
     @IBAction func Back(_ sender: AnyObject) {
         SecondViewController()
     }
         
+    override func viewWillAppear(_ animated: Bool) {
         
+        nextgame.isHidden = true
+    }
+    
         
         
     
